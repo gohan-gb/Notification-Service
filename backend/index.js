@@ -1,8 +1,16 @@
 const express = require('express');
 require('dotenv').config()
+const mailRouter = require('./routes/sendMail.Routes')
 
 const app = express();
-const PORT = 5000
+const PORT = 8000
+
+app.use(express.json())
+app.use(mailRouter)
+
+app.get("/", (req, res) => {
+    res.send('hello world')
+})
 
 app.listen(PORT, ()=>{
     console.log(`Server started at port ${PORT}`)
