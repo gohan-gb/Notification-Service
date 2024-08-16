@@ -1,3 +1,5 @@
+clone the repository to your IDE (command => git clone https://github.com/gohan-gb/Notification-Service.git )
+
 1) RUN the command on terminal => npm i 
 
 2) .env(environment variable) configuration =>
@@ -15,3 +17,5 @@ b/ in that file add these two lines of codes;
 {
     "userEmail":"users@email.com"
 }
+
+*userEmail: the gmail id where you want to get the message
