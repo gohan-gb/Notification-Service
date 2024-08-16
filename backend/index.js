@@ -1,5 +1,4 @@
 const express = require('express');
-require('dotenv').config()
 const mailRouter = require('./routes/sendMail.Routes')
 
 const app = express();
